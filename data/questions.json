@@ -1,0 +1,467 @@
+{
+  "aptitude_test": [
+    {
+      "id": 1,
+      "question": "When solving a problem, you usually:",
+      "options": ["Follow a structured plan", "Try creative approaches", "Experiment until it works", "Seek guidance from others"]
+    },
+    {
+      "id": 2,
+      "question": "How confident are you in analyzing data or patterns?",
+      "options": ["Very confident", "Somewhat confident", "Neutral", "Not confident"]
+    },
+    {
+      "id": 3,
+      "question": "When working in a team, you prefer to:",
+      "options": ["Lead the team", "Support and collaborate", "Observe and provide suggestions", "Work independently"]
+    },
+    {
+      "id": 4,
+      "question": "Which skill describes you best?",
+      "options": ["Analytical thinker", "Creative problem solver", "Logical planner", "Quick decision maker"]
+    },
+    {
+      "id": 5,
+      "question": "You enjoy tasks that require:",
+      "options": ["Critical thinking", "Creativity", "Attention to detail", "Fast execution"]
+    },
+    {
+      "id": 6,
+      "question": "When faced with a new topic, you:",
+      "options": ["Research and plan carefully", "Dive in and learn by doing", "Ask experts for advice", "Try multiple approaches"]
+    },
+    {
+      "id": 7,
+      "question": "Do you enjoy solving puzzles and logical challenges?",
+      "options": ["Yes, very much", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 8,
+      "question": "How do you approach decisions under pressure?",
+      "options": ["Analyze data carefully", "Trust intuition", "Seek others’ opinions", "Take quick action"]
+    },
+    {
+      "id": 9,
+      "question": "When learning a new skill, you prefer:",
+      "options": ["Step-by-step instructions", "Exploration and experimentation", "Watching tutorials", "Group practice"]
+    },
+    {
+      "id": 10,
+      "question": "Which environment motivates you the most?",
+      "options": ["Structured and organized", "Flexible and dynamic", "Collaborative and social", "Independent and focused"]
+    },
+    {
+      "id": 11,
+      "question": "Do you enjoy analyzing patterns and trends?",
+      "options": ["Yes, very much", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 12,
+      "question": "When solving a challenge, you tend to:",
+      "options": ["Break it into smaller parts", "Think outside the box", "Follow tried methods", "Seek guidance immediately"]
+    },
+    {
+      "id": 13,
+      "question": "Are you comfortable making decisions with incomplete information?",
+      "options": ["Yes", "Sometimes", "Rarely", "No"]
+    },
+    {
+      "id": 14,
+      "question": "Do you prefer working with numbers and data or creative ideas?",
+      "options": ["Numbers and data", "Creative ideas", "Both equally", "Depends on context"]
+    },
+    {
+      "id": 15,
+      "question": "How well do you handle complex problems?",
+      "options": ["Very well", "Moderately", "With difficulty", "Not well"]
+    },
+    {
+      "id": 16,
+      "question": "Do you enjoy planning and organizing tasks?",
+      "options": ["Yes, always", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 17,
+      "question": "You prefer challenges that are:",
+      "options": ["Analytical", "Creative", "Logical", "Hands-on practical"]
+    },
+    {
+      "id": 18,
+      "question": "Do you enjoy learning new technologies?",
+      "options": ["Yes, very much", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 19,
+      "question": "When faced with multiple solutions, you usually:",
+      "options": ["Analyze pros and cons", "Go with your gut feeling", "Ask for advice", "Pick the simplest"]
+    },
+    {
+      "id": 20,
+      "question": "Are you more interested in understanding concepts or applying them practically?",
+      "options": ["Understanding concepts", "Applying practically", "Both equally", "Depends on situation"]
+    },
+    {
+      "id": 21,
+      "question": "Do you enjoy brainstorming sessions?",
+      "options": ["Yes, actively participate", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 22,
+      "question": "Do you adapt quickly to new environments or tasks?",
+      "options": ["Yes, easily", "Moderately", "With difficulty", "No"]
+    },
+    {
+      "id": 23,
+      "question": "Which approach do you use for problem-solving?",
+      "options": ["Analytical", "Creative", "Trial-and-error", "Collaborative"]
+    },
+    {
+      "id": 24,
+      "question": "Do you enjoy research and exploring new ideas?",
+      "options": ["Yes, very much", "Sometimes", "Rarely", "Not at all"]
+    },
+    {
+      "id": 25,
+      "question": "Do you prefer working independently or in a team?",
+      "options": ["Independently", "In a team", "Both equally", "Depends on task"]
+    }
+  ],
+  
+  "domain_test": {
+    "web_development": [
+      {"id": 1, "question": "What does HTML stand for?", "options": ["Hyper Text Markup Language", "High Tech Machine Language", "Home Tool Markup Language", "Hyperlink Text Mode Language"]},
+      {"id": 2, "question": "Which language is used to style web pages?", "options": ["CSS", "Python", "Java", "SQL"]},
+      {"id": 3, "question": "Which tag is used to create a link?", "options": ["<a>", "<link>", "<href>", "<p>"]},
+      {"id": 4, "question": "What does JS stand for?", "options": ["JavaScript", "JavaSource", "JustScript", "JScript"]},
+      {"id": 5, "question": "Which attribute is used to open a link in a new tab?", "options": ["target='_blank'", "href='_new'", "link='_open'", "src='_tab'"]},
+      {"id": 6, "question": "Which is a frontend framework?", "options": ["React", "Django", "Flask", "Spring"]},
+      {"id": 7, "question": "Which CSS property changes text color?", "options": ["color", "background", "font-size", "text-decoration"]},
+      {"id": 8, "question": "What does DOM stand for?", "options": ["Document Object Model", "Data Object Model", "Desktop Object Model", "Design Object Model"]},
+      {"id": 9, "question": "Which HTML tag is used for a paragraph?", "options": ["<p>", "<h1>", "<div>", "<span>"]},
+      {"id": 10, "question": "Which is used for responsive web design?", "options": ["Media Queries", "Flexbox", "Grid", "All of the above"]},
+      {"id": 11, "question": "Which symbol is used for ID in CSS?", "options": ["#", ".", "*", "&"]},
+      {"id": 12, "question": "Which language adds interactivity to web pages?", "options": ["JavaScript", "HTML", "CSS", "SQL"]},
+      {"id": 13, "question": "Bootstrap is a:", "options": ["CSS framework", "Programming language", "Database", "IDE"]},
+      {"id": 14, "question": "Which tag is used to include JavaScript?", "options": ["<script>", "<js>", "<code>", "<link>"]},
+      {"id": 15, "question": "Which method is used to select elements in JavaScript?", "options": ["getElementById()", "select()", "query()", "findElement()"]}
+    ],
+
+    "data_science": [
+      {"id": 1, "question": "Which language is most commonly used in data science?", "options": ["Python", "Java", "C++", "PHP"]},
+      {"id": 2, "question": "What does CSV stand for?", "options": ["Comma Separated Values", "Column Separated Values", "Character Separated Values", "Code Syntax Values"]},
+      {"id": 3, "question": "Which library is used for data manipulation in Python?", "options": ["Pandas", "NumPy", "Matplotlib", "Scikit-learn"]},
+      {"id": 4, "question": "Which type of chart is best for showing proportions?", "options": ["Pie chart", "Line chart", "Histogram", "Scatter plot"]},
+      {"id": 5, "question": "Which algorithm is used for classification?", "options": ["Decision Tree", "K-Means", "PCA", "Apriori"]},
+      {"id": 6, "question": "Which is a supervised learning algorithm?", "options": ["Linear Regression", "K-Means", "PCA", "Apriori"]},
+      {"id": 7, "question": "Which library is used for visualization in Python?", "options": ["Matplotlib", "Pandas", "NumPy", "Scikit-learn"]},
+      {"id": 8, "question": "What does ML stand for?", "options": ["Machine Learning", "Matrix Logic", "Model Language", "Mathematical Logic"]},
+      {"id": 9, "question": "Which of the following is an unsupervised learning algorithm?", "options": ["K-Means", "Linear Regression", "Logistic Regression", "Decision Tree"]},
+      {"id": 10, "question": "Which type of data is best suited for a histogram?", "options": ["Continuous data", "Categorical data", "Text data", "Binary data"]},
+      {"id": 11, "question": "Which Python library is used for numerical computation?", "options": ["NumPy", "Pandas", "Matplotlib", "Seaborn"]},
+      {"id": 12, "question": "What is overfitting in ML?", "options": ["Model fits training data too well", "Model performs well on unseen data", "Model ignores data", "Model underfits training data"]},
+      {"id": 13, "question": "Which is used for dimensionality reduction?", "options": ["PCA", "KNN", "Decision Tree", "Naive Bayes"]},
+      {"id": 14, "question": "Which metric is used for regression evaluation?", "options": ["Mean Squared Error", "Accuracy", "Precision", "Recall"]},
+      {"id": 15, "question": "Which technique is used to handle missing data?", "options": ["Imputation", "Normalization", "Standardization", "One-hot encoding"]}
+    ],
+
+    "software_engineering": [
+      {"id": 1, "question": "Which software development methodology uses iterative cycles?", "options": ["Agile", "Waterfall", "V-Model", "Spiral"]},
+      {"id": 2, "question": "What is version control?", "options": ["Tracking changes in code", "Compiling code", "Testing software", "Designing UI"]},
+      {"id": 3, "question": "Which tool is used for version control?", "options": ["Git", "Docker", "Jenkins", "Jira"]},
+      {"id": 4, "question": "What is the main purpose of testing?", "options": ["Find and fix bugs", "Write documentation", "Deploy application", "Design UI"]},
+      {"id": 5, "question": "Which type of testing checks individual units?", "options": ["Unit Testing", "Integration Testing", "System Testing", "Acceptance Testing"]},
+      {"id": 6, "question": "What does UML stand for?", "options": ["Unified Modeling Language", "Universal Modeling Language", "Unique Method Language", "Uniform Markup Language"]},
+      {"id": 7, "question": "Which programming paradigm focuses on objects?", "options": ["Object-Oriented Programming", "Procedural Programming", "Functional Programming", "Structured Programming"]},
+      {"id": 8, "question": "Which is a continuous integration tool?", "options": ["Jenkins", "Git", "Docker", "AWS"]},
+      {"id": 9, "question": "What is refactoring?", "options": ["Improving code without changing functionality", "Adding features", "Writing tests", "Deploying software"]},
+      {"id": 10, "question": "Which software development model is linear?", "options": ["Waterfall", "Agile", "Spiral", "Iterative"]},
+      {"id": 11, "question": "What is software maintenance?", "options": ["Updating and fixing software", "Writing new software", "Testing hardware", "Designing database"]},
+      {"id": 12, "question": "Which diagram represents object relationships?", "options": ["Class Diagram", "Use Case Diagram", "Sequence Diagram", "Activity Diagram"]},
+      {"id": 13, "question": "Which tool is used for bug tracking?", "options": ["Jira", "Git", "Docker", "AWS"]},
+      {"id": 14, "question": "What is the purpose of a design pattern?", "options": ["Reusable solution for common problem", "Testing software", "Deploying code", "Writing documentation"]},
+      {"id": 15, "question": "Which is a software versioning scheme?", "options": ["Semantic Versioning", "Waterfall", "Agile", "Scrum"]}
+    ],
+
+    "cloud_computing": [
+      {"id": 1, "question": "Which is a cloud service provider?", "options": ["AWS", "Linux", "Python", "Git"]},
+      {"id": 2, "question": "What does IaaS stand for?", "options": ["Infrastructure as a Service", "Internet as a Service", "Integration as a Service", "Interface as a Service"]},
+      {"id": 3, "question": "What does SaaS stand for?", "options": ["Software as a Service", "System as a Service", "Security as a Service", "Storage as a Service"]},
+      {"id": 4, "question": "What does PaaS stand for?", "options": ["Platform as a Service", "Python as a Service", "Protocol as a Service", "Pipeline as a Service"]},
+      {"id": 5, "question": "Which is used for cloud storage?", "options": ["AWS S3", "GitHub", "Docker", "Python"]},
+      {"id": 6, "question": "Which is a public cloud?", "options": ["AWS", "Private Datacenter", "Local Server", "Corporate LAN"]},
+      {"id": 7, "question": "Which service provides virtual servers?", "options": ["EC2", "S3", "Lambda", "Route53"]},
+      {"id": 8, "question": "What is serverless computing?", "options": ["Run code without managing servers", "Use physical servers only", "Install local servers", "Manage virtual servers manually"]},
+      {"id": 9, "question": "Which cloud model is shared by multiple organizations?", "options": ["Public Cloud", "Private Cloud", "Hybrid Cloud", "Community Cloud"]},
+      {"id": 10, "question": "Which AWS service is for databases?", "options": ["RDS", "EC2", "S3", "Lambda"]},
+      {"id": 11, "question": "What is cloud scalability?", "options": ["Ability to increase/decrease resources", "Adding more users", "Writing more code", "Deploying applications"]},
+      {"id": 12, "question": "Which is used for content delivery?", "options": ["CDN", "EC2", "S3", "VPC"]},
+      {"id": 13, "question": "Which cloud type combines public and private?", "options": ["Hybrid Cloud", "Public Cloud", "Private Cloud", "Multi Cloud"]},
+      {"id": 14, "question": "Which AWS service is used for computing?", "options": ["EC2", "S3", "Lambda", "CloudFront"]},
+      {"id": 15, "question": "Which is an advantage of cloud computing?", "options": ["Cost efficiency", "Manual scaling", "Hardware ownership", "No internet needed"]}
+    ],
+
+    "cyber_security": [
+      {"id": 1, "question": "What is phishing?", "options": ["Fraudulent attempts to get sensitive info", "Network optimization", "Data backup", "Firewall configuration"]},
+      {"id": 2, "question": "Which is a strong password practice?", "options": ["Mix of letters, numbers, symbols", "Use '123456'", "Use your name", "Short passwords"]},
+      {"id": 3, "question": "What does VPN stand for?", "options": ["Virtual Private Network", "Virtual Public Network", "Verified Private Network", "Visual Private Node"]},
+      {"id": 4, "question": "Which is a type of malware?", "options": ["Virus", "HTML", "CSS", "Python"]},
+      {"id": 5, "question": "Which is used to protect against unauthorized access?", "options": ["Firewall", "Compiler", "Router", "Switch"]},
+      {"id": 6, "question": "What is encryption?", "options": ["Converting data into secure format", "Deleting data", "Transferring files", "Backing up data"]},
+      {"id": 7, "question": "What does 2FA stand for?", "options": ["Two-Factor Authentication", "Two File Access", "Two Function Algorithm", "Two Factor Algorithm"]},
+      {"id": 8, "question": "Which is a cyberattack type?", "options": ["DDoS", "HTML", "CSS", "JS"]},
+      {"id": 9, "question": "What is a firewall?", "options": ["Security system controlling incoming/outgoing traffic", "Storage system", "Database", "Server"]},
+      {"id": 10, "question": "Which is an example of social engineering?", "options": ["Phishing emails", "Python script", "Web design", "Database query"]},
+      {"id": 11, "question": "What is a vulnerability?", "options": ["Weakness in a system", "Strong security feature", "Coding standard", "UI component"]},
+      {"id": 12, "question": "Which tool is used for network scanning?", "options": ["Nmap", "Git", "Docker", "VS Code"]},
+      {"id": 13, "question": "What is SSL used for?", "options": ["Encrypt communication", "Data storage", "Network routing", "Programming"]},
+      {"id": 14, "question": "Which is a password attack type?", "options": ["Brute Force", "SQL", "HTML", "CSS"]},
+      {"id": 15, "question": "What is malware?", "options": ["Malicious software", "Text editor", "Server", "Database"]}
+    ],
+
+    "robotics": [
+      {"id": 1, "question": "What is a robot?", "options": ["Programmable machine", "Animal", "Mobile app", "Database"]},
+      {"id": 2, "question": "Which sensor detects obstacles?", "options": ["Ultrasonic sensor", "Temperature sensor", "Pressure sensor", "Light sensor"]},
+      {"id": 3, "question": "Which programming language is commonly used in robotics?", "options": ["Python", "HTML", "CSS", "SQL"]},
+      {"id": 4, "question": "What is actuators used for?", "options": ["Movement and action", "Sensing", "Data storage", "Network communication"]},
+      {"id": 5, "question": "Which is an example of autonomous robot?", "options": ["Self-driving car", "Remote-controlled car", "Toy robot", "Desktop computer"]},
+      {"id": 6, "question": "What is ROS?", "options": ["Robot Operating System", "Remote Operating Software", "Rapid Object Simulation", "Robot Online System"]},
+      {"id": 7, "question": "Which sensor detects light intensity?", "options": ["Photodiode", "Gyroscope", "Ultrasonic", "Thermistor"]},
+      {"id": 8, "question": "What does kinematics study in robotics?", "options": ["Motion of robots", "Power supply", "Software", "Networking"]},
+      {"id": 9, "question": "Which type of robot is industrial?", "options": ["Arm robot", "Toy robot", "Drone", "Mobile phone"]},
+      {"id": 10, "question": "Which sensor is used for orientation?", "options": ["Gyroscope", "Temperature sensor", "Light sensor", "Ultrasonic sensor"]},
+      {"id": 11, "question": "Which is a common microcontroller in robotics?", "options": ["Arduino", "Raspberry Pi", "Intel i7", "AMD Ryzen"]},
+      {"id": 12, "question": "What is SLAM in robotics?", "options": ["Simultaneous Localization and Mapping", "Software Logic and Modeling", "Systematic Learning and Modeling", "Simple Linear Automation"]},
+      {"id": 13, "question": "Which power source is commonly used?", "options": ["Batteries", "Gasoline", "Diesel", "Nuclear"]},
+      {"id": 14, "question": "What is inverse kinematics?", "options": ["Calculating joint angles to reach target", "Power management", "Sensor calibration", "Data analysis"]},
+      {"id": 15, "question": "Which robot type is humanoid?", "options": ["Human-like robot", "Arm robot", "Drone", "Autonomous car"]}
+    ],
+
+    "AI_ML": [
+      {"id": 1, "question": "What does AI stand for?", "options": ["Artificial Intelligence", "Automated Interface", "Advanced Integration", "Algorithmic Input"]},
+      {"id": 2, "question": "Which is a supervised learning algorithm?", "options": ["Linear Regression", "K-Means", "PCA", "Apriori"]},
+      {"id": 3, "question": "Which library is used for ML in Python?", "options": ["Scikit-learn", "NumPy", "Pandas", "Matplotlib"]},
+      {"id": 4, "question": "What does NLP stand for?", "options": ["Natural Language Processing", "Network Layer Protocol", "Neural Learning Program", "Nonlinear Processing"]},
+      {"id": 5, "question": "Which algorithm is used for clustering?", "options": ["K-Means", "Linear Regression", "Decision Tree", "Logistic Regression"]},
+      {"id": 6, "question": "Which is an activation function?", "options": ["ReLU", "PCA", "SVM", "KNN"]},
+      {"id": 7, "question": "What does CNN stand for?", "options": ["Convolutional Neural Network", "Clustered Neural Node", "Computer Network Node", "Central Neural Node"]},
+      {"id": 8, "question": "Which is a deep learning framework?", "options": ["TensorFlow", "Flask", "Django", "Bootstrap"]},
+      {"id": 9, "question": "Which is used for regression tasks?", "options": ["Linear Regression", "K-Means", "Decision Tree Classification", "PCA"]},
+      {"id": 10, "question": "Which is used for dimensionality reduction?", "options": ["PCA", "KNN", "Decision Tree", "Naive Bayes"]},
+      {"id": 11, "question": "Which method prevents overfitting?", "options": ["Regularization", "Scaling", "Normalization", "One-hot encoding"]},
+      {"id": 12, "question": "What is reinforcement learning?", "options": ["Learning by rewards and penalties", "Supervised learning", "Clustering", "Data preprocessing"]},
+      {"id": 13, "question": "Which is a popular optimizer in ML?", "options": ["Adam", "SGD", "RMSprop", "All of the above"]},
+      {"id": 14, "question": "Which layer is used in neural networks?", "options": ["Dense Layer", "CSS Layer", "HTML Layer", "Database Layer"]},
+      {"id": 15, "question": "Which type of problem is classification?", "options": ["Categorical output prediction", "Numeric output prediction", "Data cleaning", "Data visualization"]}
+    ],
+
+    "database_admin": [
+      {"id": 1, "question": "Which is a relational database?", "options": ["MySQL", "MongoDB", "Cassandra", "Neo4j"]},
+      {"id": 2, "question": "Which command is used to fetch data?", "options": ["SELECT", "INSERT", "UPDATE", "DELETE"]},
+      {"id": 3, "question": "Which SQL clause is used for filtering?", "options": ["WHERE", "ORDER BY", "GROUP BY", "HAVING"]},
+      {"id": 4, "question": "What is normalization?", "options": ["Reducing data redundancy", "Increasing storage", "Creating backups", "Writing queries"]},
+      {"id": 5, "question": "Which command adds new data?", "options": ["INSERT", "SELECT", "UPDATE", "DELETE"]},
+      {"id": 6, "question": "Which command modifies data?", "options": ["UPDATE", "SELECT", "INSERT", "DELETE"]},
+      {"id": 7, "question": "Which command removes data?", "options": ["DELETE", "SELECT", "INSERT", "UPDATE"]},
+      {"id": 8, "question": "Which key uniquely identifies a record?", "options": ["Primary Key", "Foreign Key", "Index", "Constraint"]},
+      {"id": 9, "question": "Which key establishes relationship between tables?", "options": ["Foreign Key", "Primary Key", "Index", "Trigger"]},
+      {"id": 10, "question": "Which is a NoSQL database?", "options": ["MongoDB", "MySQL", "PostgreSQL", "Oracle"]},
+      {"id": 11, "question": "What is a stored procedure?", "options": ["Predefined SQL code", "Python script", "HTML page", "CSS style"]},
+      {"id": 12, "question": "Which command creates a table?", "options": ["CREATE TABLE", "INSERT", "UPDATE", "DELETE"]},
+      {"id": 13, "question": "Which clause is used to sort results?", "options": ["ORDER BY", "WHERE", "GROUP BY", "HAVING"]},
+      {"id": 14, "question": "Which clause is used to group results?", "options": ["GROUP BY", "WHERE", "ORDER BY", "HAVING"]},
+      {"id": 15, "question": "Which index improves search performance?", "options": ["B-Tree Index", "Primary Key", "Foreign Key", "Constraint"]}
+    ],
+
+    "graphic_design": [
+      {"id": 1, "question": "Which software is used for vector graphics?", "options": ["Adobe Illustrator", "Photoshop", "CorelDRAW", "MS Paint"]},
+      {"id": 2, "question": "Which is used for raster graphics?", "options": ["Photoshop", "Illustrator", "Inkscape", "SVG"]},
+      {"id": 3, "question": "Which color model is used in print?", "options": ["CMYK", "RGB", "HSV", "HEX"]},
+      {"id": 4, "question": "Which is used for website graphics?", "options": ["RGB", "CMYK", "Pantone", "LAB"]},
+      {"id": 5, "question": "What is typography?", "options": ["Art of text design", "Image editing", "Video creation", "Animation"]},
+      {"id": 6, "question": "Which software is used for UI/UX design?", "options": ["Figma", "Illustrator", "Photoshop", "CorelDRAW"]},
+      {"id": 7, "question": "Which is a design principle?", "options": ["Contrast", "Compile", "Query", "Index"]},
+      {"id": 8, "question": "Which file format is scalable without quality loss?", "options": ["SVG", "JPEG", "PNG", "GIF"]},
+      {"id": 9, "question": "Which tool is used for photo editing?", "options": ["Photoshop", "Illustrator", "Figma", "Blender"]},
+      {"id": 10, "question": "Which principle enhances readability?", "options": ["Alignment", "Rotation", "Scaling", "Cropping"]},
+      {"id": 11, "question": "Which color model is used for screens?", "options": ["RGB", "CMYK", "HSV", "Pantone"]},
+      {"id": 12, "question": "What does UI stand for?", "options": ["User Interface", "User Interaction", "Unified Interface", "Unique Interaction"]},
+      {"id": 13, "question": "What does UX stand for?", "options": ["User Experience", "User Extension", "Unified Experience", "Unique Execution"]},
+      {"id": 14, "question": "Which principle guides spacing in design?", "options": ["Proximity", "Hierarchy", "Contrast", "Balance"]},
+      {"id": 15, "question": "Which tool is used for prototyping?", "options": ["Figma", "Photoshop", "Illustrator", "InDesign"]}
+    ],
+
+    "networking": [
+      {"id": 1, "question": "What does LAN stand for?", "options": ["Local Area Network", "Large Area Network", "Long Area Network", "Low Access Network"]},
+      {"id": 2, "question": "What does IP stand for?", "options": ["Internet Protocol", "Internal Process", "Integrated Platform", "Input Protocol"]},
+      {"id": 3, "question": "Which device connects multiple networks?", "options": ["Router", "Switch", "Hub", "Modem"]},
+      {"id": 4, "question": "Which protocol is used for web traffic?", "options": ["HTTP", "FTP", "SMTP", "DNS"]},
+      {"id": 5, "question": "Which protocol is used for email?", "options": ["SMTP", "HTTP", "DNS", "FTP"]},
+      {"id": 6, "question": "What does DNS do?", "options": ["Translates domain names to IP addresses", "Stores data", "Runs programs", "Connects devices"]},
+      {"id": 7, "question": "Which layer is responsible for routing?", "options": ["Network Layer", "Transport Layer", "Application Layer", "Data Link Layer"]},
+      {"id": 8, "question": "Which device filters traffic between networks?", "options": ["Firewall", "Switch", "Hub", "Router"]},
+      {"id": 9, "question": "Which protocol ensures reliable delivery?", "options": ["TCP", "UDP", "IP", "HTTP"]},
+      {"id": 10, "question": "Which IP version uses 128-bit addresses?", "options": ["IPv6", "IPv4", "IPX", "ICMP"]},
+      {"id": 11, "question": "Which protocol is used for secure web traffic?", "options": ["HTTPS", "HTTP", "FTP", "SMTP"]},
+      {"id": 12, "question": "Which cable type is used for long-distance networking?", "options": ["Fiber Optic", "Coaxial", "Twisted Pair", "USB"]},
+      {"id": 13, "question": "Which tool checks network connectivity?", "options": ["Ping", "Traceroute", "Netstat", "All of the above"]},
+      {"id": 14, "question": "Which device creates a network?", "options": ["Switch", "Hub", "Router", "Modem"]},
+      {"id": 15, "question": "What is the main purpose of DHCP?", "options": ["Assign IP addresses dynamically", "Route traffic", "Filter packets", "Encrypt data"]}
+    ]
+},
+  
+  "prediction_test": [
+  {
+    "id": 1,
+    "scenario": "When working on a new digital project, what type of task excites you the most?",
+    "options": [
+      "Designing and building the front-end UI",
+      "Training ML models or analyzing large datasets",
+      "Setting up cloud servers and deployment",
+      "Securing systems, data, and networks"
+    ]
+  },
+  {
+    "id": 2,
+    "scenario": "A company wants to build a smart automated robot. Which role would you choose?",
+    "options": [
+      "Programming the robot’s movements and sensors",
+      "Building vision systems for the robot to recognize objects",
+      "Creating the backend system to store robot data",
+      "Ensuring secure communication between robot and server"
+    ]
+  },
+  {
+    "id": 3,
+    "scenario": "You are asked to create a system that manages millions of records. Which work interests you?",
+    "options": [
+      "Designing scalable, normalized databases",
+      "Analyzing the data to find insights",
+      "Building APIs that interact with the data",
+      "Securing the database from breaches"
+    ]
+  },
+  {
+    "id": 4,
+    "scenario": "Your team needs a computer-vision based parking detection system. What part would you handle?",
+    "options": [
+      "Training ML models to detect cars",
+      "Building the camera processing/vision pipeline",
+      "Building UI to display free parking slots",
+      "Deploying the system on cloud"
+    ]
+  },
+  {
+    "id": 5,
+    "scenario": "You are responsible for developing a new web application. Which task would you enjoy?",
+    "options": [
+      "Frontend design and animations",
+      "Backend programming and API design",
+      "Database planning & optimization",
+      "Security implementation and testing"
+    ]
+  },
+  {
+    "id": 6,
+    "scenario": "A company wants to monitor cyberattacks in real time. Which part suits you?",
+    "options": [
+      "Analyzing threat logs and patterns",
+      "Developing tools for incident detection",
+      "Managing secure network configurations",
+      "Maintaining cloud-based security systems"
+    ]
+  },
+  {
+    "id": 7,
+    "scenario": "Your college plans to build a 3D virtual campus tour. Where would you contribute?",
+    "options": [
+      "Creating 3D models and rendering",
+      "Creating front-end controls for movement",
+      "Integrating backend/servers",
+      "Handling cloud hosting of assets"
+    ]
+  },
+
+  {
+    "id": 8,
+    "scenario": "How comfortable are you with writing code (any language)?",
+    "options": [
+      "Beginner – I can write simple programs",
+      "Intermediate – I can build small projects",
+      "Advanced – I can debug, optimize, and structure large codebases",
+      "No experience – I prefer non-coding tasks"
+    ]
+  },
+  {
+    "id": 9,
+    "scenario": "How good are you at solving logical or analytical problems?",
+    "options": [
+      "Beginner – I struggle with complex logic",
+      "Intermediate – I can solve moderate problems",
+      "Advanced – I enjoy solving challenging problems",
+      "Expert – I solve problems quickly and creatively"
+    ]
+  },
+  {
+    "id": 10,
+    "scenario": "How familiar are you with cloud platforms (AWS, Azure, GCP)?",
+    "options": [
+      "Beginner – I know basic cloud concepts",
+      "Intermediate – I can deploy basic apps",
+      "Advanced – I can manage servers, CI/CD, and scaling",
+      "No experience – I have never worked on cloud"
+    ]
+  },
+  {
+    "id": 11,
+    "scenario": "How confident are you in debugging code or systems?",
+    "options": [
+      "Beginner – I can fix minor issues",
+      "Intermediate – I can diagnose errors with guidance",
+      "Advanced – I can debug complex systems independently",
+      "No experience with debugging"
+    ]
+  },
+  {
+    "id": 12,
+    "scenario": "How comfortable are you with security awareness (passwords, encryption, vulnerabilities)?",
+    "options": [
+      "Beginner – I know only basics",
+      "Intermediate – I understand common threats",
+      "Advanced – I can analyze and secure systems",
+      "No experience in security"
+    ]
+  },
+  {
+    "id": 13,
+    "scenario": "Your institute wants to build a prediction model for performance. What task suits you best?",
+    "options": [
+      "Collecting & analyzing historical data",
+      "Training ML prediction models",
+      "Building the dashboard UI for results",
+      "Deploying the model securely on servers"
+    ]
+  },
+  {
+    "id": 14,
+    "scenario": "A gaming company hires you. Which job excites you?",
+    "options": [
+      "Designing game graphics and animations",
+      "Programming gameplay logic",
+      "Managing player data and backend",
+      "Protecting players from security risks"
+    ]
+  },
+  {
+    "id": 15,
+    "scenario": "Your university wants to build a smart attendance system. Which area would you choose?",
+    "options": [
+      "Implementing face-recognition system",
+      "Setting up database & backend",
+      "Developing mobile/web interface",
+      "Ensuring data privacy & security"
+    ]
+  }
+]
+
+}
+

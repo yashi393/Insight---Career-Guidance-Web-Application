@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Database Administration — Domain Guide</title>
+<link rel="stylesheet" href="all.css">
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Leaflet (maps) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- Back -->
+  <div class="back-wrap">
+    <a class="back-btn" href="../domain_info.html"><span class="arrow">◀</span> Back to Domains</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Database Administration</h1>
+      <p>
+        Database Administration (DBA) covers the design, installation, configuration, backup,
+        tuning, and maintenance of relational and modern data platforms. DBAs ensure data
+        availability, integrity, security, and performance for applications and analytics workloads.
+        With cloud-managed databases and distributed systems becoming mainstream, DBAs now blend
+        traditional RDBMS skills with cloud, automation and data ops practices.
+      </p>
+
+      <!-- Quick meta row -->
+      <div class="meta-row">
+        <div class="meta">
+          <strong>Difficulty</strong>
+          <div class="badge">Intermediate</div>
+        </div>
+        <div class="meta">
+          <strong>Typical time to job-readiness</strong>
+          <div class="badge">3 - 7 months (fundamentals) • 1–3 years (pro)</div>
+        </div>
+        <div class="meta">
+          <strong>Core tools</strong>
+          <div class="badge">Postgres • MySQL • Oracle • MongoDB • Redis • AWS RDS</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <!-- user-provided path (exact) -->
+      <img src="field_css\field_dba.png" alt="Database Administration Illustration">
+    </div>
+
+    <div class="gradient-blobs"></div>
+  </section>
+
+  <!-- QUICK NAV -->
+  <nav class="mini-nav">
+    <a href="#skills">Skills</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#salary">Salaries</a>
+    <a href="#roles">Roles</a>
+    <a href="#projects">Projects</a>
+    <a href="#resources">Resources</a>
+  </nav>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title"><span>Skills</span> Required</h2>
+    <div class="card-grid">
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721298.png" alt="">
+        <h3>RDBMS & SQL</h3>
+        <p>Design schemas, write performant SQL, indexes, query plans, normalization.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="">
+        <h3>Backup & Recovery</h3>
+        <p>Incremental backups, point-in-time recovery, replication topologies.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2693/2693459.png" alt="">
+        <h3>Performance Tuning</h3>
+        <p>Query optimization, indexing strategies, connection pooling, explain plans.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149125.png" alt="">
+        <h3>Cloud & Automation</h3>
+        <p>Managed DBs (RDS, Cloud SQL), IaC (Terraform), monitoring & automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap" class="section">
+    <h2 class="section-title"><span>Skills</span> Roadmap</h2>
+    <div class="roadmap">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Foundations</h4>
+        <p>SQL basics, table design, transactions, ACID, basic backups and restores.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Core DBA</h4>
+        <p>Replication, HA, failover, indexing, query tuning, monitoring fundamentals.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Cloud & Automation</h4>
+        <p>Managed databases, IaC, automated patching, performance in cloud environments.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Specialization</h4>
+        <p>Distributed databases, sharding, data ops, security & compliance, multi-cloud setups.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- TOOLS -->
+<section class="section">
+  <h2 class="section-title"><span>Tools</span> you'll use</h2>
+  <div class="tools">
+    <div class="tool">PostgreSQL</div>
+    <div class="tool">MySQL / MariaDB</div>
+    <div class="tool">Oracle</div>
+    <div class="tool">MongoDB</div>
+    <div class="tool">Redis</div>
+    <div class="tool">AWS RDS / Aurora</div>
+    <div class="tool">Terraform</div>
+    <div class="tool">PgAdmin / MySQL Workbench</div>
+    <div class="tool">Prometheus & Grafana</div>
+    <div class="tool">Ansible / Shell scripting</div>
+  </div>
+</section>
+
+<!-- SUITABILITY -->
+<section class="section">
+  <h2 class="section-title">Is this <span>domain right</span> for you?</h2>
+  <div class="suitability">
+    <div>
+      <h4>Good fit if you...</h4>
+      <p>✔ Enjoy low-level troubleshooting and performance analysis</p>
+      <p>✔ Like ensuring reliability, backups and uptime</p>
+      <p>✔ Prefer systems-oriented, operational work</p>
+      <p>✔ Enjoy scripting and automating repeatable tasks</p>
+    </div>
+    <div>
+      <h4>May not suit if you...</h4>
+      <p>✖ Prefer purely front-end or product design roles</p>
+      <p>✖ Dislike repetitive operational duties</p>
+      <p>✖ Avoid working with infra or on-call rotations</p>
+    </div>
+  </div>
+</section>
+
+<!-- ROLES -->
+<section class="section">
+  <h2 class="section-title"><span>Job</span> roles</h2>
+
+  <div class="roles-grid">
+
+    <div class="role-card">
+      <h4>Junior DBA</h4>
+      <p class="role-short">Support & maintenance.</p>
+      <p>Daily tasks: backups, restores, simple tuning, monitoring.</p>
+    </div>
+
+    <div class="role-card">
+      <h4>Senior DBA</h4>
+      <p class="role-short">Architecture & tuning.</p>
+      <p>Design HA, disaster recovery, major performance troubleshooting.</p>
+    </div>
+
+    <div class="role-card">
+      <h4>Data Platform Engineer</h4>
+      <p class="role-short">Platform & automation.</p>
+      <p>Build managed database platforms, automation, CI/CD for data infra.</p>
+    </div>
+
+    <div class="role-card">
+      <h4>DB Reliability Engineer (DBRE)</h4>
+      <p class="role-short">Reliability engineering.</p>
+      <p>Combine SRE practices with database operations and capacity planning.</p>
+    </div>
+
+    <div class="role-card">
+      <h4>Data Ops / Migration Specialist</h4>
+      <p class="role-short">Migrations & ETL.</p>
+      <p>Plan migrations, schema evolution, data integrity across systems.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title"><span>Real-world</span> starter projects</h2>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833524.png" alt="Backup Icon">
+        <h4>Automated Backup & Restore Playbook</h4>
+        <p>Implement scheduled backups, test restores and create runbooks for RTO/RPO.</p>
+    </div>
+    <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920318.png" alt="Replication Icon">
+        <h4>High Availability Setup</h4>
+        <p>Configure replication & automated failover for PostgreSQL or MySQL.</p>
+    </div>
+    <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Tuning Icon">
+        <h4>Query Performance Tuning</h4>
+        <p>Profile slow queries, create indexes and document before/after improvements.</p>
+    </div>
+    <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3580/3580996.png" alt="Cloud Icon">
+        <h4>Cloud Migration (On-prem → RDS)</h4>
+        <p>Plan and execute a migration to managed DB service (schema + data + cutover).</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & LEARNING TIME -->
+<section class="section">
+  <h2 class="section-title"><span>Certifications</span> estimates</h2>
+  <div class="cert-time">
+
+    <div class="cert-card">
+        <h4>Oracle Certified Associate (OCA)</h4>
+        <p>Vendor-specific but valuable for enterprise roles.</p>
+        <a class="cert-btn" href="https://education.oracle.com/" target="_blank">Go to Course</a>
+    </div>
+
+    <div class="cert-card">
+        <h4>Microsoft Certified: Azure Database Administrator</h4>
+        <p>Cloud-focused DBA cert for Azure managed databases.</p>
+        <a class="cert-btn" href="https://learn.microsoft.com/" target="_blank">Go to Course</a>
+    </div>
+
+    <div class="cert-card">
+        <h4>Certified PostgreSQL DBA (PGCert)/Cloudera</h4>
+        <p>Practical certs for open-source DB platforms and big data stacks.</p>
+        <a class="cert-btn" href="https://www.postgresql.org/about/certification/" target="_blank">Go to Course</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Global DBA Job Demand -->
+<section class="section">
+  <h2 class="section-title"><span>Global DBA</span> Job Demand</h2>
+  <div id="dbaMap" class="map-container"></div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+// Initialize the map
+const dbaMap = L.map('dbaMap').setView([20, 0], 2);
+
+// Add tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+}).addTo(dbaMap);
+
+// Job demand markers only (NO HEATMAP)
+const jobDemand = [
+  [37.0902, -95.7129, "USA: Huge demand for Database Administrators, Data Engineers & Cloud DB experts"],
+  [20.5937, 78.9629, "India: High demand for SQL experts, DB migration, tuning specialists"],
+  [51.5074, -0.1278, "UK: Strong hiring for cloud database security & enterprise DB roles"],
+  [52.52, 13.4050, "Germany: Demand in enterprise DB, SAP HANA management & data safety"],
+  [1.3521, 103.8198, "Singapore: Financial/BFSI sector demanding advanced DB admins"],
+  [23.4241, 53.8478, "UAE: Rapid growth in cloud DB, security & data compliance jobs"],
+  [56.1304, -106.3468, "Canada: Strong hiring in SQL Server, PostgreSQL & cloud DB engineering"],
+  [35.6895, 139.6917, "Japan: Growing demand for Autonomous DB, database automation & tuning"]
+];
+
+// Add markers
+jobDemand.forEach(loc => {
+  L.marker([loc[0], loc[1]]).addTo(dbaMap).bindPopup(loc[2]);
+});
+</script>
+
+
+<section id="salary" class="section">
+  <h2 class="section-title"><span>Salary</span> & Career Data</h2>
+  <p class="salary-sub">Salaries vary with DB type, cloud skills and automation experience.</p>
+
+  <div class="charts-grid">
+
+    <div class="chart-card">
+      <h4>Entry-level Salary (Horizontal)</h4>
+      <canvas id="dbaFresher"></canvas>
+      <div class="chart-legend">India = ₹3.5–6 LPA • US = $60–85K</div>
+    </div>
+
+    <div class="chart-card">
+      <h4>Experience vs Salary (Dual-Line)</h4>
+      <canvas id="dbaExp"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h4>Role-wise Salary (Radar)</h4>
+      <canvas id="dbaRole"></canvas>
+    </div>
+
+    <div class="chart-card">
+      <h4>Company-type Salary</h4>
+      <canvas id="dbaCompany"></canvas>
+    </div>
+
+    <div class="chart-card wide">
+      <h4>Industry Demand Forecast (2025–2030)</h4>
+      <canvas id="dbaTrend"></canvas>
+    </div>
+
+  </div>
+</section>
+
+<script>
+/* Gradient helper for bar backgrounds */
+function g(ctx,a,b){
+  let x=ctx.createLinearGradient(0,0,0,400);
+  x.addColorStop(0,a);
+  x.addColorStop(1,b);
+  return x;
+}
+
+/************ 1. Fresher Salary (Horizontal Bar) ************/
+const fctx = document.getElementById("dbaFresher").getContext("2d");
+new Chart(fctx, {
+  type: 'bar',
+  data: {
+    labels: ["India (₹ LPA)", "US (USD k)"],
+    datasets: [{
+      label: 'Entry Salary',
+      data: [4.5, 70],
+      backgroundColor: [g(fctx,"#06B6D4","#3B82F6"), g(fctx,"#8B5CF6","#6366F1")],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins:{legend:{display:false}}
+  }
+});
+
+/************ 2. Experience vs Salary (Dual-Line) ************/
+const ectx = document.getElementById("dbaExp").getContext("2d");
+new Chart(ectx, {
+  type: 'line',
+  data: {
+    labels: ["0y","1y","3y","5y","8y","12y"],
+    datasets: [
+      { label: "DBA India (LPA)", data: [3.5,5.5,8.5,12,18,26], borderColor: "#06B6D4", fill: true, backgroundColor: "rgba(6,182,212,0.08)", tension: 0.25 },
+      { label: "DBA US (k USD)", data: [60,75,95,120,150,190], borderColor: "#6366F1", fill: true, backgroundColor: "rgba(99,102,241,0.08)", tension: 0.25 }
+    ]
+  },
+  options: { responsive: true, maintainAspectRatio: false }
+});
+
+/************ 3. Role-wise (Radar) ************/
+const rctx = document.getElementById("dbaRole").getContext("2d");
+new Chart(rctx, {
+  type: 'radar',
+  data: {
+    labels: ["Junior DBA","Senior DBA","Platform Engineer","DBRE","Migration Specialist"],
+    datasets: [{
+      label: 'Average Relative Pay (index)',
+      data: [60,90,95,85,80],
+      backgroundColor: "rgba(99,102,241,0.12)",
+      borderColor: "#6366F1",
+      pointBackgroundColor: "#6366F1"
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, scales:{ r: { beginAtZero:true } } }
+});
+
+/************ 4. Company-type (Vertical bar) ************/
+const cctx = document.getElementById("dbaCompany").getContext("2d");
+new Chart(cctx, {
+  type: 'bar',
+  data: {
+    labels: ["Startup","Enterprise","SaaS Product","FinTech","Cloud Provider"],
+    datasets: [{
+      label: "Average Salary Index",
+      data: [10,18,22,26,30],
+      backgroundColor: ["#06B6D4","#3B82F6","#8B5CF6","#22C55E","#F97316"],
+      borderRadius: 6
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, plugins:{legend:{display:false}} }
+});
+
+/************ 5. Industry Demand Forecast (Area chart 2025-2030) ************/
+const tctx = document.getElementById("dbaTrend").getContext("2d");
+new Chart(tctx, {
+  type: 'line',
+  data: {
+    labels: ["2025","2026","2027","2028","2029","2030"],
+    datasets: [
+      {
+        label: "DBA Demand Index",
+        data: [100,115,130,150,170,190],
+        borderColor: "#06B6D4",
+        backgroundColor: "rgba(6,182,212,0.12)",
+        fill: true,
+        tension: 0.25
+      }
+    ]
+  },
+  options: { responsive: true, maintainAspectRatio: false, scales:{ y:{ beginAtZero:false } } }
+});
+</script>
+
+<!-- PROS & CONS -->
+<section class="section">
+  <h2 class="section-title"><span>Pros</span> & Cons</h2>
+
+  <div class="pros-cons-container">
+    <div class="pros-box">
+      <h3>Pros</h3>
+      <p>• Stable, well-defined career ladder and clear impact on uptime</p>
+      <p>• High demand for cloud + DBA hybrid skills</p>
+      <p>• Lots of automation opportunities to scale your impact</p>
+      <p>• Work across many industries — finance, healthcare, SaaS</p>
+    </div>
+
+    <div class="cons-box">
+      <h3>Cons</h3>
+      <p>• Can be operational and repetitive unless you automate</p>
+      <p>• On-call rotations and incident-driven pressure possible</p>
+      <p>• Requires broad knowledge (OS, network, storage, cloud)</p>
+      <p>• Vendor lock-in and legacy platforms can be challenging</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section">
+  <h2 class="section-title"><span>Additional</span> Resources</h2>
+
+  <div class="resources">
+    <a class="resource-tag" href="https://www.postgresql.org" target="_blank">PostgreSQL</a>
+    <a class="resource-tag" href="https://dev.mysql.com" target="_blank">MySQL</a>
+    <a class="resource-tag" href="https://learn.microsoft.com/en-us/sql/" target="_blank">Microsoft SQL Docs</a>
+    <a class="resource-tag" href="https://www.mongodb.com" target="_blank">MongoDB</a>
+    <a class="resource-tag" href="https://www.percona.com" target="_blank">Percona Resources</a>
+    <a class="resource-tag" href="https://www.cncf.io" target="_blank">CNCF (for distributed data)</a>
+  </div>
+</section>
+
+</body>
+</html>
