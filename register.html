@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register — INSIGHT</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <style>
+    /* Small local styles so message looks good even if your login.css differs */
+    .form__box { max-width:420px; margin:70px auto; padding:28px; border-radius:12px; background:rgba(255,255,255,0.02); }
+    .form_title { color:#fff; text-align:center; margin-bottom:12px; font-size:20px; }
+    #message { text-align:center; margin:12px 0; font-weight:600; min-height:22px; }
+    .input__field { width:100%; box-sizing:border-box; margin:10px 0; padding:12px; border-radius:8px; border: none; background: rgba(255,255,255,0.06); color:#fff; }
+    .submit__btn { width:100%; padding:12px; margin-top:10px; border:none; border-radius:8px; cursor:pointer; font-weight:600; }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar"> 
+    <div class="navbar__container">
+        <a href="index.php" id="navbar__logo">INSIGHT</a>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="index.php" class="navbar__links">Home</a></li>
+            <li class="navbar__item"><a href="login.html" class="navbar__links">Sign in</a></li>
+        </ul>
+     </div>
+  </nav>
+
+  <div class="hero">
+    <div class="form__box">
+      <h2 class="form_title">Create an account</h2>
+
+      <!-- Inline message area (populated by JS reading query params) -->
+      <div id="message" aria-live="polite"></div>
+
+      <!-- Plain POST form (no AJAX) -->
+      <form id="registerForm" action="backend/register.php" method="POST" autocomplete="off" novalidate>
+        <input type="text" name="first_name" class="input__field" placeholder="First Name" autocomplete="off" required>
+        <input type="text" name="last_name" class="input__field" placeholder="Last Name" autocomplete="off" required>
+        <input type="email" name="email" class="input__field" placeholder="Email" autocomplete="off" required>
+        <input type="text" name="username" class="input__field" placeholder="Choose username" autocomplete="off" required>
+        <input type="password" name="password" class="input__field" placeholder="Choose password" autocomplete="new-password" required>
+        <button type="submit" class="submit__btn">Register</button>
+      </form>
+
+      <p style="text-align:center; margin-top:12px; color:#cbd5e1;">
+        Already have an account? <a href="login.html" style="color:#fff; text-decoration:underline;">Sign in</a>
+      </p>
+    </div>
+  </div>
+
+<script>
+/* Show messages based on query string (register.php should redirect back here with ?registered=1 or ?reg_error=...) */
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const msgEl = document.getElementById('message');
+
+  if (params.has('registered')) {
+    msgEl.style.color = '#9EEBCF';
+    msgEl.textContent = 'Registered successfully — you can now sign in.';
+  } else if (params.get('reg_error') === 'missing') {
+    msgEl.style.color = '#ffb3b3';
+    msgEl.textContent = 'Please fill all registration fields.';
+  } else if (params.get('reg_error') === 'email_exists') {
+    msgEl.style.color = '#ffb3b3';
+    msgEl.textContent = 'That email is already registered.';
+  } else if (params.get('reg_error') === 'username_exists') {
+    msgEl.style.color = '#ffb3b3';
+    msgEl.textContent = 'That username is already taken.';
+  } else if (params.get('reg_error') === 'server') {
+    msgEl.style.color = '#ffb3b3';
+    msgEl.textContent = 'Server error — try again later.';
+  } else {
+    msgEl.textContent = ''; // no message
+  }
+})();
+</script>
+
+</body>
+</html>

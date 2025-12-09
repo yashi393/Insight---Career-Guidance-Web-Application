@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+/* ------------------------------
+   GLOBAL RESET & FONT
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------------
+   COLOR PALETTE
+------------------------------ */
+:root {
+  --primary: #0EA5E9;
+  --primary-dark: #0E7490;
+  --accent: #A3E635;
+
+  --bg: #F6FAFD;
+  --card-bg: #FFFFFF;
+
+  --text-dark: #0F172A;
+  --text-light: #475569;
+  --mostused: #081638;
+
+  --success: #22C55E;
+  --warning: #FACC15;
+  --error: #DC2626;
+}
+
+/* ------------------------------
+   BODY
+------------------------------ */
+body {
+  background: var(--mostused);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+/* ------------------------------
+   CENTER CONTAINER
+------------------------------ */
+.container {
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* ------------------------------
+   TITLES
+------------------------------ */
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+/* ------------------------------
+   GRID OF CARDS
+------------------------------ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+/* ------------------------------
+   CARD STYLE — MATCHES QUIZ PAGES
+------------------------------ */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  background: #0E7490;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  border: 2px solid var(--card-bg);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--mostused);
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.card:hover p {
+  color: var(--card-bg);
+}
+
+/* ------------------------------
+   TAKE TEST BUTTON
+------------------------------ */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  transform: scale(1.05);
+  color:black;
+}
+
+/* ------------------------------
+   BACK BUTTON
+------------------------------ */
+.back-wrap{
+  position:fixed;
+  left:22px;
+  top:18px;
+  z-index:50;
+}
+.back-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px;
+  border-radius:10px;
+  background: rgba(255,255,255,0.04);
+  color:var(--card-bg);
+  font-weight: 800;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: transform .15s ease, background .15s ease;
+  font-weight:500;
+}
+.back-btn:hover { 
+  transform: translateY(-3px); 
+  background: rgba(255,255,255,0.06) 
+}
+
+.back-btn .arrow{
+  display:inline-block;
+  transform:translateX(-1px);
+  font-size:14px;
+  color: var(--accent);
+}

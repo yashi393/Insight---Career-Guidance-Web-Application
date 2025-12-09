@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Prediction Test — INSIGHT</title>
+  <link rel="stylesheet" href="prediction.css?=v1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div class="back-wrap">
+    <a class="back-btn" href="dashboard.html">
+      <span class="arrow">◀</span> <span>Back to Dashboard</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <header class="header">
+      <h1>INSIGHT — Skill & Domain Prediction</h1>
+      <p class="subtitle">Answer honestly — one card at a time.</p>
+    </header>
+
+    <main id="main">
+      <div id="card-area" class="card-area">
+        <!-- cards are rendered here by JS -->
+        <div class="loader">Loading questions…</div>
+      </div>
+
+      <div class="controls" id="controls" style="display:none;">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <div class="progress" id="progress"><span id="progressText"></span></div>
+        <button id="nextBtn" class="btn primary">Next</button>
+      </div>
+    </main>
+  </div>
+
+  <template id="card-template">
+    <div class="card">
+      <div class="q-header">
+        <div class="q-number"></div>
+        <div class="q-title"></div>
+      </div>
+      <div class="q-body">
+        <select class="q-select">
+          <option value="">-- Select an option --</option>
+        </select>
+      </div>
+      <div class="q-note">Choose one option that describes you best.</div>
+    </div>
+  </template>
+
+  <div id="resultModal" class="result-modal" style="display:none;">
+    <div class="result-box">
+      <h2>Your recommended domain</h2>
+      <div id="resultDomain" class="result-domain"></div>
+      <div id="resultMsg" class="result-msg"></div>
+      <button id="doneBtn" class="btn primary">Done</button>
+    </div>
+  </div>
+
+  <script src="prediction.js?=v2"></script>
+</body>
+</html>

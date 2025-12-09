@@ -1,0 +1,447 @@
+<!-- INSIGHT -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INSIGHT — Login / Register</title>
+
+  <style>
+  
+  @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap';
+
+  :root{
+    --primary: #0EA5E9;
+    --primary-dark: #0E7490;
+    --accent: #A3E635;
+    --bg: linear-gradient(135deg,#081638 0%, #0B2A4A 25%, #153b3d 50%, #64d24a 100%);
+    --card: rgba(255,255,255,0.06);
+    --glass: rgba(255,255,255,0.06);
+    --text: #E6F0F6;
+    --muted: rgba(230,240,250,0.6);
+    --neon: rgba(14,165,233,0.18);
+    --glow: 0 10px 40px rgba(14,165,233,0.12), inset 0 1px 0 rgba(255,255,255,0.02);
+    --radius: 14px;
+  }
+
+  * { 
+    box-sizing: border-box
+  }
+  
+  html,body {
+    height:100%
+  }
+
+  body{
+    margin:0;
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color:var(--text);
+    background: var(--bg);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:flex;
+    flex-direction:column;
+  }
+
+  /*===============
+       NAVBAR
+  ================*/
+
+  .navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:40;
+    padding:14px 0;
+    background: linear-gradient(180deg, rgba(8,22,56,0.55), rgba(8,22,56,0.20));
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .navbar__container {
+    width:92%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+  }
+  #navbar__logo {
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:1.2px
+  }
+  .navbar__menu {
+    display:flex;
+    gap:18px;
+    list-style:none
+  }
+  .navbar__links{
+    color:var(--text);
+    font-weight: 800;
+    gap:8px;
+    text-decoration:none
+  }
+  .navbar__links:hover{
+    color:var(--primary)
+  }
+
+
+  /*==============
+     HERO / FRAME 
+  ================*/
+  .hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding-top:70px
+  }
+
+  /* Wrapper card */
+  .card-wrap{
+    width:980px;
+    max-width:95%;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:36px;
+    align-items:center
+  }
+
+  /*=========================
+     Left: Branding / info
+  ===========================*/
+
+  .brand{
+    padding:36px;
+    border-radius:var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    box-shadow: var(--glow);
+    border: 1px solid rgba(255,255,255,0.03);
+    min-height:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;gap:40px;
+  }
+  .brand h1{
+    font-size:34px;
+    margin:0;
+    color:var(--text);
+    letter-spacing:0.4px
+  }
+  .brand p{
+    margin:0;
+    color:var(--muted);
+    max-width:60%
+  }
+
+  /*====================
+    Right: form box
+  ====================*/
+
+  .forms {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 400px;
+  }
+
+  .form__box{
+    position:relative;
+    border-radius:18px;
+    padding:28px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(14,165,233,0.08);
+    box-shadow: 0 20px 50px rgba(3,10,30,0.6), 0 6px 18px rgba(14,165,233,0.06);
+    overflow:hidden;
+  }
+
+  /* neon rim */
+  .form__box::before{
+    content:'';
+    position:absolute;
+    inset:-2px;
+    border-radius:20px;
+    background: linear-gradient(90deg, transparent, rgba(14,165,233,0.18), transparent);
+    filter:blur(12px);
+    opacity:0.9;
+    pointer-events:none
+  }
+
+  .form_title{
+    font-size:20px;
+    margin-bottom:18px;
+    color:var(--text);
+    font-weight:700;
+  }
+  
+  /* initial positions */
+  #Login {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;    /* active form is clickable */
+  }
+  #register {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  /* Toggle */
+  .button__box{
+    display:flex;
+    gap:8px;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px
+  }
+  .toggle__btn{
+    padding:10px 18px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.04);
+    background:transparent;
+    color:var(--muted);
+    cursor:pointer;
+    font-weight:700;
+    transition:0.25s
+  }
+  .toggle__btn.active{
+    background: var(--primary);
+    color: white;
+  }
+
+  .input__group{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    transition: transform 0.45s ease, opacity 0.35s ease;
+    pointer-events: none;   /* inactive form unclickable */
+  }
+
+  .input__field{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    background:rgba(255,255,255,0.03);
+    color:var(--text);
+    margin:10px 0;
+    font-weight:600
+  }
+  .input__field::placeholder{
+    color:var(--muted)
+  }
+  .input__field:focus{
+    outline:none;
+    box-shadow:0 6px 18px rgba(14,165,233,0.08);
+    transform:translateY(-1px)
+  }
+
+  .submit__btn{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    font-weight:800;
+    color:#04233a;
+    cursor:pointer;
+    background:linear-gradient(90deg,var(--primary),#36baf0);
+    box-shadow:0 10px 30px rgba(14,165,233,0.18)
+  }
+  .submit__btn:hover{
+    transform:translateY(-3px)
+  }
+
+  .muted-link{
+    color:var(--muted);
+    font-size:14px;
+    text-align:center;
+    display:block;
+    margin-top:12px
+  }
+
+  /* small helper */
+  .small{
+    font-size:13px;
+    color:var(--muted)
+  }
+
+  /* responsive */
+  @media (max-width:880px){
+    .card-wrap{
+      grid-template-columns:1fr;
+      gap:18px
+    }
+    .brand{
+      order:2
+    }
+    .form__box{
+      order:1
+    }
+  }
+
+  /* success / error pills */
+  .pill{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    font-weight:700
+  }
+  .pill.success{
+    background:linear-gradient(90deg,#9EEBCF, #22C55E);
+    color:#041d11
+  }
+  .pill.error{
+    background:linear-gradient(90deg,#ffb3b3, #ff5c5c);
+    color:#2b0202
+  }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a id="navbar__logo" href="index.php">INSIGHT</a>
+      <ul class="navbar__menu">
+        <li><a class="navbar__links" href="index.php">Home</a></li>
+        <li><a class="navbar__links" href="login.html">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="card-wrap">
+
+      <!-- LEFT: branding / context -->
+      <div class="brand">
+        <h1>INSIGHT — Skill & Domain Prediction</h1>
+        <p>Sign in to unlock your learning path. Test your skills, understand your strengths, and discover where you truly belong in tech.</p>
+        <div class="small">Let’s figure out your perfect tech match — one quiz at a time!</div>
+      </div>
+
+      <!-- RIGHT: Form box (combined login/register) -->
+      <div class="form__box">
+
+        <!-- Dynamic welcome title -->
+        
+        <h2 id="welcomeTitle" class="form_title">Welcome back!</h2>
+      
+        
+        <div class="button__box">
+          <button id="toggleLogin" class="toggle__btn active">Login</button>
+          <button id="toggleRegister" class="toggle__btn">Register</button>
+        </div>
+        
+        <div class="forms">
+
+          <!-- LOGIN FORM -->
+          
+          <form id="Login" class="input__group" action="backend/login.php" method="POST" autocomplete="off">
+            <input name="username" autocomplete="off" class="input__field" placeholder="Username" required>
+            <input type="password" autocomplete="new-password" name="password" class="input__field" placeholder="Password" required>
+            <button type="submit" class="submit__btn">Log in</button>
+            
+            <p class="muted-link">Don’t have an account?
+              <a href="#" onclick="showRegister();return false;" style="color:var(--primary);text-decoration:underline">Create one</a>
+            </p>
+          </form>
+
+          <!-- REGISTER FORM -->
+          
+          <form id="register" class="input__group" action="backend/register.php" method="POST" autocomplete="off">
+            <input type="text" name="first_name" autocomplete="off" class="input__field" placeholder="First name" required>
+            <input type="text" name="last_name" autocomplete="off" class="input__field" placeholder="Last name" required>
+            <input type="email" name="email" autocomplete="off" class="input__field" placeholder="Email" required>
+            <input type="text" name="username" autocomplete="off" class="input__field" placeholder="Choose username" required>
+            <input type="password" name="password" autocomplete="new-password" class="input__field" placeholder="Choose password" required>
+            
+            <button type="submit" class="submit__btn">Register</button>
+            
+            <p class="muted-link">Already have an account?
+              <a href="#" onclick="showLogin();return false;" style="color:var(--primary);text-decoration:underline"> Sign in </a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+const loginForm = document.getElementById('Login');
+const regForm = document.getElementById('register');
+const toggleLogin = document.getElementById('toggleLogin');
+const toggleRegister = document.getElementById('toggleRegister');
+const title = document.getElementById("welcomeTitle");
+
+toggleLogin.onclick = showLogin;
+toggleRegister.onclick = showRegister;
+
+function showLogin() {
+    toggleLogin.classList.add("active");
+    toggleRegister.classList.remove("active");
+
+    loginForm.style.transform = "translateX(0)";
+    loginForm.style.opacity = "1";
+    loginForm.style.pointerEvents = "auto";
+
+    regForm.style.transform = "translateX(100%)";
+    regForm.style.opacity = "0";
+    regForm.style.pointerEvents = "none";
+
+    title.textContent = "Welcome back!";
+}
+
+function showRegister() {
+    toggleRegister.classList.add("active");
+    toggleLogin.classList.remove("active");
+
+    loginForm.style.transform = "translateX(-100%)";
+    loginForm.style.opacity = "0";
+    loginForm.style.pointerEvents = "none";
+
+    regForm.style.transform = "translateX(0)";
+    regForm.style.opacity = "1";
+    regForm.style.pointerEvents = "auto";
+
+    title.textContent = "Welcome!";
+}
+
+window.onload = () => {
+    document.querySelectorAll("input").forEach(i => i.value = "");
+    showLogin();
+};
+
+  toggleLogin.addEventListener('click', showLogin);
+  toggleRegister.addEventListener('click', showRegister);
+
+  // show messages based on query params (keeps your existing logic)
+  (function(){
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('registered')){
+      messageEl.innerHTML = '<span class="pill success">Registered successfully — you can now sign in.</span>';
+      showLogin();
+    } else if (params.get('login_error') === '1'){
+      messageEl.innerHTML = '<span class="pill error">Invalid username or password.</span>';
+      showLogin();
+    } else if (params.get('reg_error') === 'email_exists'){
+      messageEl.innerHTML = '<span class="pill error">Email already registered.</span>';
+      showRegister();
+    } else if (params.get('reg_error') === 'username_exists'){
+      messageEl.innerHTML = '<span class="pill error">Username already taken.</span>';
+      showRegister();
+    } else if (params.get('reg_error') === 'missing'){
+      messageEl.innerHTML = '<span class="pill error">Please fill all fields.</span>';
+      showRegister();
+    }
+  })();
+
+  // Initialize state
+  showLogin();
+</script>
+</body>
+</html>

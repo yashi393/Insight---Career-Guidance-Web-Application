@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Graphics Quiz</title>
+    <link rel="stylesheet" href="graphics.css?=v1">
+</head>
+
+<body>
+
+<div class="page-grid">
+
+    <!-- LEFT PANEL -->
+
+<aside class="left-panel">
+    
+    <!-- Top Section -->
+    <div class="left-top">
+        <h1 class="bubble-heading">COMPUTER VISION & GRAPHICS</h1>
+        <p class="left-sub">Enable machines to see, analyze & visualize</p>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="left-bottom">
+        <img src="../static/icons/graphics_png.png" class="float-img" alt="Web Dev Character">
+        <div class="shadow-ring"></div>
+    </div>
+
+</aside>
+
+
+
+    <!-- RIGHT PANEL -->
+    <main class="right-panel">
+
+        <div class="game-details-container" id="top-info">
+            <h2 class="panel-title">Computer Vision and Graphics Quiz</h2>
+
+            <div class="score-meta">
+                <div>Question: <span id="question-number">1</span> / 10</div>
+            </div>
+        </div>
+
+        <!-- QUIZ AREA -->
+        <section id="quiz-area" class="game-quiz-container">
+
+            <div class="game-question-container">
+                <h3 id="display-question">Question text</h3>
+                <span id="player-score" style="display:none;">0</span>
+            </div>
+
+            <div id="options-container" class="game-options-container">
+
+                <label class="option-block">
+                    <input type="radio" id="optionA" name="option" value="optionA">
+                    <span id="optionA-label" class="option"></span>
+                </label>
+
+                <label class="option-block">
+                    <input type="radio" id="optionB" name="option" value="optionB">
+                    <span id="optionB-label" class="option"></span>
+                </label>
+
+                <label class="option-block">
+                    <input type="radio" id="optionC" name="option" value="optionC">
+                    <span id="optionC-label" class="option"></span>
+                </label>
+
+                <label class="option-block">
+                    <input type="radio" id="optionD" name="option" value="optionD">
+                    <span id="optionD-label" class="option"></span>
+                </label>
+
+            </div>
+
+            <div class="next-button-container">
+                <button id="nextBtn">Next Question</button>
+            </div>
+
+        </section>
+
+        <!-- RESULT AREA -->
+        <section id="result-area" style="display:none;">
+            <div class="result-wrapper">
+
+                <div class="result-card glass">
+                    <h2>Your Result</h2>
+                    <p><strong>Score:</strong> <span id="final-score"></span></p>
+                    <p><strong>Percentage:</strong> <span id="final-percent"></span></p>
+                    <p id="final-message" class="message"></p>
+
+                    <div class="result-buttons">
+                        <button id="back-btn">Back to Domains</button>
+                        <button id="retry-btn">Retry</button>
+                    </div>
+                </div>
+
+                <div class="result-gif">
+                    <img src="../static/icons/sucess.gif" alt="Result GIF">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="graphics.js"></script>
+</body>
+</html>

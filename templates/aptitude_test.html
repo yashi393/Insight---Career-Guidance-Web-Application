@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="aptitude_test.css?=v2">
+  <title>Aptitude Test</title>
+</head>
+<body>
+  <!-- Back button -->
+  <div class="back-wrap">
+    <a class="back-btn" href="../dashboard.html">
+      <span class="arrow">◀</span> <span>Back to Dashboard</span>
+    </a>
+  </div>
+
+  <!-- Toast (validation) -->
+  <div id="toast" class="toast">Please select an option before continuing.</div>
+
+  <div class="page">
+    <div class="center">
+
+      <!-- Title -->
+      <div class="title-wrap">
+        <div id="titleBox" class="title-box">
+          <h1>Aptitude Test</h1>
+        </div>
+        <p class="title-sub">Measure your natural strengths and discover the career domain that best fits your profile. Answer honestly — there are no right or wrong answers.</p>
+      </div>
+
+      <!-- Quiz card -->
+      <div class="quiz-card" role="application" aria-labelledby="question">
+        <!-- Left vertical previous -->
+        <div class="prev-col">
+          <button id="prevBtn" class="prev-btn" title="Previous question">Previous</button>
+        </div>
+
+        <!-- Quiz column -->
+        <div class="quiz-col">
+          <div class="q-meta">
+            <div class="q-number" id="qNumber">Question 1 of 15</div>
+            <div class="progress-bar" aria-hidden>
+              <i id="progressFill"></i>
+            </div>
+          </div>
+
+          <div class="question" id="question">Question text</div>
+
+          <ul class="options" id="optionsList">
+            <li class="option"><input class="answer" type="radio" id="a" name="answer"><label for="a" id="a_text">Answer A</label></li>
+            <li class="option"><input class="answer" type="radio" id="b" name="answer"><label for="b" id="b_text">Answer B</label></li>
+            <li class="option"><input class="answer" type="radio" id="c" name="answer"><label for="c" id="c_text">Answer C</label></li>
+            <li class="option"><input class="answer" type="radio" id="d" name="answer"><label for="d" id="d_text">Answer D</label></li>
+          </ul>
+
+          <div class="nav-row">
+            <button id="nextBtn" class="btn-main">Next</button>
+            <button id="submitBtn" class="btn-main" style="display:none;">Submit</button>
+          </div>
+        </div>
+
+        <!-- Right GIF column (hidden during quiz) -->
+
+        <div id="gifCol" class="gif-col" aria-hidden="true">
+          <img id="resultGif" src="../static/icons/sucess.gif" alt="Result Graphic">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="aptitude_test.js?=v2"></script>
+</body>
+</html>
