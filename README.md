@@ -85,19 +85,8 @@ To improve the project’s quality, performance, and usability, I rebuilt the en
 
 -- Deployed the web app independently
 
-⚙️ Installation / Setup Instructions
 
-*If someone wants to run this project locally:*
-
-1. Install XAMPP (Apache + MySQL).
-
-2. Place the project folder inside: htdocs/
-
-3. Start Apache and MySQL from XAMPP.
-
-4. Import the database file insight.sql in phpMyAdmin.
-
-5. Open the browser and visit: http://localhost/Insight/
+3. Open the browser and visit: http://localhost/Insight/
 
 🌐 Live Demo
 
